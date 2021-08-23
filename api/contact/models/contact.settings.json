@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home": {
+      "type": "string"
+    },
+    "mobile1": {
+      "type": "string"
+    },
+    "mobile2": {
+      "type": "string"
+    },
+    "user": {
+      "via": "contact",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

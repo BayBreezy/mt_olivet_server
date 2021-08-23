@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kins",
+  "info": {
+    "name": "Kin"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "minLength": 7
+    },
+    "address": {
+      "type": "text"
+    },
+    "relationship": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "kins",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

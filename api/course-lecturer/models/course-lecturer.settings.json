@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_lecturers",
+  "info": {
+    "name": "Course Lecturer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "end": {
+      "type": "date",
+      "required": true
+    },
+    "course": {
+      "model": "course"
+    },
+    "teacher": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gradebooks",
+  "info": {
+    "name": "Gradebook"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "model": "course"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "credits_gained": {
+      "type": "integer",
+      "required": true
+    },
+    "mark": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "comment": {
+      "type": "text"
+    }
+  }
+}

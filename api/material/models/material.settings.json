@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "name": "Material"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_name": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

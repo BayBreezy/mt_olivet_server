@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qualifications",
+  "info": {
+    "name": "Qualification",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "award_type": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string",
+      "required": true
+    },
+    "award_date": {
+      "type": "date",
+      "required": true
+    },
+    "exam_body": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "qualifications",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

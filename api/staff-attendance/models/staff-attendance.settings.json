@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_attendances",
+  "info": {
+    "name": "Staff Attendance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "default": "present",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "course": {
+      "model": "course"
+    }
+  }
+}

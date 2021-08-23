@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_medias",
+  "info": {
+    "name": "Social Media"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "snapchat": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "user": {
+      "via": "social_media",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

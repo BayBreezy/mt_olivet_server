@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/course-lecturers",
+      "handler": "course-lecturer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-lecturers/count",
+      "handler": "course-lecturer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-lecturers/:id",
+      "handler": "course-lecturer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/course-lecturers",
+      "handler": "course-lecturer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/course-lecturers/:id",
+      "handler": "course-lecturer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/course-lecturers/:id",
+      "handler": "course-lecturer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

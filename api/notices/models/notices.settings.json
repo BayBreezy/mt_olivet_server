@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notices",
+  "info": {
+    "name": "Notices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "targets": {
+      "plugin": "users-permissions",
+      "collection": "role"
+    },
+    "color": {
+      "type": "string",
+      "default": "#006eff"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 10
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

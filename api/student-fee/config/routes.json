@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/student-fees",
+      "handler": "student-fee.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-fees/count",
+      "handler": "student-fee.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-fees/:id",
+      "handler": "student-fee.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/student-fees",
+      "handler": "student-fee.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/student-fees/:id",
+      "handler": "student-fee.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/student-fees/:id",
+      "handler": "student-fee.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

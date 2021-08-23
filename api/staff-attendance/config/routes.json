@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/staff-attendances",
+      "handler": "staff-attendance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-attendances/count",
+      "handler": "staff-attendance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-attendances/:id",
+      "handler": "staff-attendance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/staff-attendances",
+      "handler": "staff-attendance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/staff-attendances/:id",
+      "handler": "staff-attendance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/staff-attendances/:id",
+      "handler": "staff-attendance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

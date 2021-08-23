@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emergency_contacts",
+  "info": {
+    "name": "Emergency Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "relationship": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "emergency_contacts",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

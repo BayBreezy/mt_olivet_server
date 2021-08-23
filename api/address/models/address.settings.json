@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "street1": {
+      "type": "string",
+      "required": true
+    },
+    "street2": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string",
+      "required": true
+    },
+    "parish": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "default": "Jamaica"
+    },
+    "user": {
+      "via": "addresses",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

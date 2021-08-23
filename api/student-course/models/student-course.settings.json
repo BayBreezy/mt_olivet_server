@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_courses",
+  "info": {
+    "name": "Student Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "course": {
+      "model": "course"
+    },
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "end": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

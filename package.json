@@ -1,0 +1,55 @@
+{
+  "name": "mt_olivet_api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CMS for Mt. Olivet Skills Training Center School Management System.",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "0.21.18",
+    "mysql": "2.18.1",
+    "socket.io": "^4.1.3",
+    "strapi": "3.6.7",
+    "strapi-admin": "3.6.7",
+    "strapi-connector-bookshelf": "3.6.7",
+    "strapi-plugin-content-manager": "3.6.7",
+    "strapi-plugin-content-type-builder": "3.6.7",
+    "strapi-plugin-documentation": "^3.6.7",
+    "strapi-plugin-email": "^3.6.7",
+    "strapi-plugin-email-designer": "^1.1.4",
+    "strapi-plugin-graphql": "^3.6.7",
+    "strapi-plugin-i18n": "3.6.7",
+    "strapi-plugin-upload": "3.6.7",
+    "strapi-plugin-users-permissions": "3.6.7",
+    "strapi-provider-email-nodemailer": "^3.6.7",
+    "strapi-utils": "3.6.7"
+  },
+  "author": {
+    "name": "Behon Baker",
+    "email": "behon.baker@yahoo.com"
+  },
+  "contributors": [
+    {
+      "name": "Marvalee Boucher"
+    },
+    {
+      "name": "Bridgette Anderson"
+    },
+    {
+      "name": "Kisha Bent"
+    }
+  ],
+  "strapi": {
+    "uuid": "9f600fd3-7299-4c5f-a841-05cfe4dc6dc1"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

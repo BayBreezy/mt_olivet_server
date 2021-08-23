@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gradebooks",
+      "handler": "gradebook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gradebooks/count",
+      "handler": "gradebook.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gradebooks/:id",
+      "handler": "gradebook.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gradebooks",
+      "handler": "gradebook.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gradebooks/:id",
+      "handler": "gradebook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gradebooks/:id",
+      "handler": "gradebook.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

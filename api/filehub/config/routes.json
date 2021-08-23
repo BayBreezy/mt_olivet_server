@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/filehubs",
+      "handler": "filehub.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/filehubs/count",
+      "handler": "filehub.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/filehubs/:id",
+      "handler": "filehub.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/filehubs",
+      "handler": "filehub.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/filehubs/:id",
+      "handler": "filehub.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/filehubs/:id",
+      "handler": "filehub.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

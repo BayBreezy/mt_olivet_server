@@ -1,0 +1,139 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "trn": {
+      "type": "string",
+      "required": false
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "middlename": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "dob": {
+      "type": "date"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "contact": {
+      "model": "contact",
+      "via": "user"
+    },
+    "addresses": {
+      "via": "user",
+      "collection": "address"
+    },
+    "social_media": {
+      "model": "social-media",
+      "via": "user"
+    },
+    "qualifications": {
+      "via": "user",
+      "collection": "qualification"
+    },
+    "employed": {
+      "type": "boolean"
+    },
+    "emergency_contacts": {
+      "via": "user",
+      "collection": "emergency-contact"
+    },
+    "educations": {
+      "via": "user",
+      "collection": "education"
+    },
+    "kins": {
+      "via": "user",
+      "collection": "kin"
+    },
+    "chat_rooms": {
+      "via": "users",
+      "collection": "chat-room"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/student-attendances",
+      "handler": "student-attendance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-attendances/count",
+      "handler": "student-attendance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/student-attendances/:id",
+      "handler": "student-attendance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/student-attendances",
+      "handler": "student-attendance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/student-attendances/:id",
+      "handler": "student-attendance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/student-attendances/:id",
+      "handler": "student-attendance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

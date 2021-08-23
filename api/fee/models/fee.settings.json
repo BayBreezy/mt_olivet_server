@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fees",
+  "info": {
+    "name": "Fee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
